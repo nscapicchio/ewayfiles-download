@@ -190,7 +190,7 @@ footer { border-top: 1px solid var(--line); padding-block: 36px 56px; color: var
       <div class="wheelcard" style="--c: var(--red)">
         <h3>Converti</h3>
         <div class="keys"><kbd>Shift</kbd></div>
-        <ul><li>Oltre 80 conversioni tra formati</li><li>Da Word e PowerPoint a PDF con formato fedele</li><li>Da PDF a Word o PowerPoint modificabili</li><li>Da video a GIF o MP3</li><li>Da HEIC a JPG</li></ul>
+        <ul><li>Oltre 80 conversioni tra formati</li><li>Da Word e PowerPoint a PDF con formato fedele</li><li>Da PDF a Word o PowerPoint modificabili</li><li>Da video a GIF o MP3</li><li>Da immagine a SVG vettoriale</li></ul>
       </div>
       <div class="wheelcard" style="--c: var(--tools)">
         <h3>Strumenti</h3>
@@ -231,7 +231,8 @@ footer { border-top: 1px solid var(--line); padding-block: 36px 56px; color: var
   <section id="formati">
     <h2>Quasi tutti i formati che incontri ogni giorno</h2>
     <div class="formats">
-      <div class="fmt"><h3>Immagini</h3><p>JPG PNG WebP AVIF TIFF GIF BMP ICO HEIC SVG PDF</p></div>
+      <div class="fmt"><h3>Immagini</h3><p>JPG PNG WebP AVIF TIFF GIF BMP ICO SVG PDF</p></div>
+      <div class="fmt"><h3>Vettoriale</h3><p>Da PNG o JPG a SVG: logo pulito, varianti per sfondo chiaro e scuro, kit per l'agenzia</p></div>
       <div class="fmt"><h3>Video</h3><p>MP4 MOV MKV WebM AVI WMV GIF MP3</p></div>
       <div class="fmt"><h3>Audio</h3><p>MP3 M4A AAC WAV FLAC OGG Opus AIFF WMA</p></div>
       <div class="fmt"><h3>PDF</h3><p>PNG JPG TXT Markdown HTML DOCX PPTX</p></div>
@@ -274,7 +275,7 @@ footer { border-top: 1px solid var(--line); padding-block: 36px 56px; color: var
           <li>Trascina EwayFiles nella cartella Applicazioni.</li>
           <li>Al primo avvio: clic destro su EwayFiles, poi <b>Apri</b>, poi <b>Apri</b> di nuovo.</li>
         </ol>
-        <div class="tip">Quale scegliere? Menu Apple › Informazioni su questo Mac. Se leggi "Chip Apple M…" scarica la versione Apple, se leggi "Intel" quella Intel.</div>
+        <div class="tip">Quale Mac hai? Menu Apple › Informazioni su questo Mac: "Chip Apple M…" = versione 2.0; "Intel" = versione 1.1 (Mac Intel). Nella 2.0 audio e video scaricano una sola volta un componente aggiuntivo di circa 19 MB.</div>
       </div>
       <div class="os">
         <h3>Windows</h3>
@@ -283,7 +284,7 @@ footer { border-top: 1px solid var(--line); padding-block: 36px 56px; color: var
           <li>Se compare "Windows ha protetto il PC", clicca <b>Più informazioni</b>, poi <b>Esegui comunque</b>.</li>
           <li>Segui i passaggi: EwayFiles appare sul Desktop e nel menu Start.</li>
         </ol>
-        <div class="tip">Non vuoi installare nulla? Scarica la versione portatile e avviala da dove vuoi.</div>
+        <div class="tip">Per Windows è disponibile la versione 1.1; la 2.0 arriverà dopo le prove. Non vuoi installare nulla? Scarica la versione portatile e avviala da dove vuoi.</div>
       </div>
     </div>
   </section>
@@ -297,10 +298,10 @@ footer { border-top: 1px solid var(--line); padding-block: 36px 56px; color: var
 <script>
 /* Link di download: file nella stessa cartella della pagina (sostituisci con indirizzi completi se li metti altrove). */
 var LINKS = {
-  macArm:   { url: 'https://github.com/nscapicchio/ewayfiles-download/releases/download/v1.1.0/EwayFiles-1.1.0-mac-arm64.dmg', name: 'Mac con chip Apple', note: 'M1, M2, M3, M4 e successivi', file: '.dmg' },
-  macIntel: { url: 'https://github.com/nscapicchio/ewayfiles-download/releases/download/v1.1.0/EwayFiles-1.1.0-mac-x64.dmg', name: 'Mac Intel',          note: 'Mac meno recenti',             file: '.dmg' },
-  win:      { url: 'https://github.com/nscapicchio/ewayfiles-download/releases/download/v1.1.0/EwayFiles-Setup-1.1.0.exe', name: 'Windows',            note: 'Windows 10 e 11 · installer',  file: '.exe' },
-  winPortable: { url: 'https://github.com/nscapicchio/ewayfiles-download/releases/download/v1.1.0/EwayFiles-1.1.0-portatile.exe', name: 'Windows portatile', note: 'Senza installazione',        file: '.exe' }
+  macArm:   { url: 'https://github.com/nscapicchio/ewayfiles-download/releases/download/v2.0.0/EwayFiles-2.0.0-mac-arm64.dmg', name: 'Mac con chip Apple', note: 'M1 e successivi · versione 2.0 · 7 MB', file: '.dmg' },
+  macIntel: { url: 'https://github.com/nscapicchio/ewayfiles-download/releases/download/v1.1.0/EwayFiles-1.1.0-mac-x64.dmg', name: 'Mac Intel', note: 'Versione 1.1', file: '.dmg' },
+  win:      { url: 'https://github.com/nscapicchio/ewayfiles-download/releases/download/v1.1.0/EwayFiles-Setup-1.1.0.exe', name: 'Windows',            note: 'Windows 10 e 11 · versione 1.1',  file: '.exe' },
+  winPortable: { url: 'https://github.com/nscapicchio/ewayfiles-download/releases/download/v1.1.0/EwayFiles-1.1.0-portatile.exe', name: 'Windows portatile', note: 'Versione 1.1 · senza installazione',        file: '.exe' }
 };
 
 var ICON_APPLE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.8-3-.8c-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.700 2.400 2.900 2.300 1.200 0 1.600-.7 3-.7s1.800.7 3 .7 2-1.100 2.800-2.200c.9-1.300 1.200-2.500 1.300-2.600-.1 0-2.500-1-2.500-3.900zM14.100 5.700c.6-.8 1.100-1.900.9-3-.9 0-2.100.6-2.700 1.400-.6.700-1.100 1.800-1 2.900 1.100.1 2.200-.5 2.800-1.300z"/></svg>';
@@ -329,10 +330,10 @@ function setLink(a, item) {
   var row = document.getElementById('dl-row');
 
   if (os === 'win') {
-    label.textContent = 'Scarica per Windows'; sub.textContent = 'Windows 10 e 11 · gratis';
+    label.textContent = 'Scarica per Windows'; sub.textContent = 'Windows 10 e 11 · versione 1.1 · gratis';
     main.querySelector('svg').outerHTML = ICON_WIN; setLink(main, LINKS.win);
   } else if (os === 'mac') {
-    label.textContent = 'Scarica per Mac'; sub.textContent = 'Chip Apple (M1 e successivi) · gratis';
+    label.textContent = 'Scarica per Mac'; sub.textContent = 'Chip Apple (M1 e successivi) · versione 2.0 · gratis';
     main.querySelector('svg').outerHTML = ICON_APPLE; setLink(main, LINKS.macArm);
   } else {
     label.textContent = 'Scarica EwayFiles'; sub.textContent = 'Scegli il tuo computer qui sotto';
@@ -346,12 +347,11 @@ function setLink(a, item) {
     return a;
   }
   row.appendChild(chip(LINKS.macArm, ICON_APPLE));
-  row.appendChild(chip(LINKS.macIntel, ICON_APPLE));
   row.appendChild(chip(LINKS.win, ICON_WIN));
 
-  var wanted = os === 'win' ? [['macArm', 'Mac con chip Apple'], ['macIntel', 'Mac Intel'], ['winPortable', 'Windows portatile']]
+  var wanted = os === 'win' ? [['winPortable', 'Windows portatile'], ['macArm', 'Mac con chip Apple'], ['macIntel', 'Mac Intel']]
              : os === 'mac' ? [['macIntel', 'Mac Intel'], ['win', 'Windows'], ['winPortable', 'Windows portatile']]
-             : [['macArm', 'Mac con chip Apple'], ['macIntel', 'Mac Intel'], ['win', 'Windows']];
+             : [['macIntel', 'Mac Intel'], ['winPortable', 'Windows portatile']];
   var lead = document.createElement('span'); lead.textContent = 'Altri computer:'; others.appendChild(lead);
   wanted.forEach(function (w) {
     var a = document.createElement('a'); a.textContent = w[1]; setLink(a, LINKS[w[0]]);
